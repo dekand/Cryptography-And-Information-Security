@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entropy", "Entropy\Entropy.csproj", "{32FE265F-B191-4E4D-8014-9C7CEE7FB089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CipherAttackScenarios", "CipherAttackScenarios\CipherAttackScenarios.csproj", "{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32FE265F-B191-4E4D-8014-9C7CEE7FB089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FE265F-B191-4E4D-8014-9C7CEE7FB089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FE265F-B191-4E4D-8014-9C7CEE7FB089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FE265F-B191-4E4D-8014-9C7CEE7FB089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2583FF7-7162-4016-BC69-DBF3F437C53E}
+	EndGlobalSection
+EndGlobal
