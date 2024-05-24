@@ -1,0 +1,1 @@
+Returns the base 2 logarithm of a specified number.
