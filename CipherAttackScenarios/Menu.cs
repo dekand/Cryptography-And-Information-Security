@@ -1,26 +1,4 @@
-﻿
-//ПРАКТИЧЕСКОЕ ЗАДАНИЕ 1 РЕАЛИЗАЦИЯ
-//АТАК НА ШИФР В РАЗЛИЧНЫХ СЦЕНАРИЯХ
-//Цель задания – реализовать зашифрование/расшифрование и атаку на
-//шифр в двух сценариях: по известному открытому тексту (known-plaintext
-//attack) и по шифрованному тексту (ciphertext-only attack) на примере шифра
-//Цезаря.
-
-//Задачи
-//1 Реализуйте зашифрование/расшифрование шифром Цезаря для
-//латинского алфавита (26 букв, ключ от 0 до 25).
-//2 Реализуйте атаку на шифр Цезаря по известному открытому тексту.
-//Вводится открытый и зашифрованный текст, требуется определить
-//ключ шифрования.
-//3 Реализуйте атаку на шифр Цезаря по шифрованному тексту. Вводится
-//зашифрованный текст, требуется вывести варианты расшифрования со
-//всеми ключами.
-//4 Усовершенствуйте программу из пункта 3 Реализуйте интеграцию с
-//каким-либо словарем, чтобы программа автоматически определяла
-//ключ шифрования, находя осмысленный текст (тот, который есть в
-//словаре).
-
-namespace CipherAttackScenarios
+﻿namespace CipherAttackScenarios
 {
     public class Menu
     {
@@ -62,8 +40,17 @@ namespace CipherAttackScenarios
                             cpa.DisplayInfo();
                             cpa.DisplayResult(cpa.Run());
                             break;
-                        case 4: break;
-                        case 5: break;
+                        case 4:
+                            Console.WriteLine("\tВведите известный зашифрованный текст:");
+                            var coa = new CiphertextAttack(Console.ReadLine());
+                            coa.DisplayResult();
+                            break;
+                        case 5:
+                            Console.WriteLine("\tВведите известный зашифрованный текст:");
+                            var coa2 = new CiphertextAttack(Console.ReadLine());
+                            coa2.DisplayResult();
+                            Console.WriteLine(coa2.DictionarySearch());
+                            break;
                         default: f = false; break;
                     }
                 }
@@ -72,6 +59,5 @@ namespace CipherAttackScenarios
                 Console.ReadLine();
             }
         }
-
     }
 }

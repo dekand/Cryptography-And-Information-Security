@@ -10,16 +10,12 @@ namespace CipherAttackScenarios
 
         public byte Run()
         {
-            Dictionary<byte, string> iterationsDict = new Dictionary<byte, string>();
-
-            for (byte i = 0; i < 25; i++)
+            for (byte i = 0; i < 26; i++)
             {
-                iterationsDict.Add(i, new CaesarСipher(plaintext, i, false).Run());
-                if (_encryptedTexts.Contains(iterationsDict[i])) { return i; }
+                if (_encryptedTexts.Contains(new CaesarСipher(plaintext, i, false).Run())) { return i; }
             }
 
-            Console.WriteLine("\t!--Ключ не найден!");
-            return 0;
+            throw new Exception("\t!--Ключ не найден!");
         }
 
         public void DisplayInfo()
