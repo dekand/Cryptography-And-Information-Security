@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entropy", "Entropy\Entropy.csproj", "{32FE265F-B191-4E4D-8014-9C7CEE7FB089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entropy", "Entropy\Entropy.csproj", "{32FE265F-B191-4E4D-8014-9C7CEE7FB089}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CipherAttackScenarios", "CipherAttackScenarios\CipherAttackScenarios.csproj", "{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CipherAttackScenarios", "CipherAttackScenarios\CipherAttackScenarios.csproj", "{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VernamСipher", "VernamСipher\VernamСipher.csproj", "{8E3C2E7A-1E67-4CE4-8FF5-E6BA8B112752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F81EF175-F2C4-4FD3-AB31-7E2F069DC2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3C2E7A-1E67-4CE4-8FF5-E6BA8B112752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3C2E7A-1E67-4CE4-8FF5-E6BA8B112752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3C2E7A-1E67-4CE4-8FF5-E6BA8B112752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3C2E7A-1E67-4CE4-8FF5-E6BA8B112752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
