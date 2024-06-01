@@ -1,0 +1,1 @@
+AES is a symmetric block encryption algorithm that operates in blocks of 128 bits.
