@@ -1,0 +1,41 @@
+﻿@model IEnumerable<AuthSysWithHashFunc.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Список пользователей</h1>
+
+<p>
+    <a asp-action="Create">Зарегистрировать нового пользователя</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <p>Login</p>
+            </th>
+            <th>
+                <p>Hash Password + salt <b>(SHA256)</b></p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
